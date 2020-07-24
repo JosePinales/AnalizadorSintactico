@@ -1,0 +1,38 @@
+package codigo;
+
+import java_cup.runtime.Symbol;
+
+parser code
+{:
+    private Symbol s;
+    
+    public void syntax_error(Symbol s){
+        this.s = s;
+    }
+
+    public Symbol getS(){
+        return this.s;
+    }
+:};
+
+ 
+terminal Linea, Comillas, T_dato, Int, Cadena, If, Else, Do, While, For,
+    Igual, Suma, Resta, Multiplicacion, Division, Op_logico, Op_relacional,
+    Op_atribucion, Op_incremento, Op_booleano, Parentesis_a, Parentesis_c,
+    Llave_a, Llave_c, Corchete_a, Corchete_c, Main, P_coma, Identificador,
+    Numero, ERROR, Resultado;
+non terminal INICIO, SENTENCIA, DECLARACION,  IF, 
+  FOR, SENTENCIA_BOOLEANA;
+
+start with IF;
+
+IF ::= 
+    If Parentesis_a SENTENCIA_BOOLEANA Parentesis_c Llave_a SENTENCIA Llave_c |
+    If Parentesis_a SENTENCIA_BOOLEANA Parentesis_c Resultado Igual Op_booleano | 
+    If Parentesis_a SENTENCIA_BOOLEANA Parentesis_c  
+;
+
+SENTENCIA_BOOLEANA ::= 
+    Op_booleano | 
+    Numero Op_relacional Numero | 
+;
