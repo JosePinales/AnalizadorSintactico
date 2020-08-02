@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp">
+
+            <TextView
+                android:layout_width="263dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="-16dp"
+                android:scrollbarSize="24dp"
+                android:text="Videos Educativos"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="0dp"
+                android:textColor="#52BAFF">
+
+            </ImageView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"                     >
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:videoId="0e-ZehYliJQ"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:showYouTubeButton="true">
+            </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:videoId="2dstdqOfVow"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:showYouTubeButton="true">
+            </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:videoId="2CwkG4qiY40"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:showYouTubeButton="true">
+            </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"                     >
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:videoId="9rj5h_rDlNY"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:showYouTubeButton="true">
+            </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:videoId="r-Kb8SrR5LQ"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:showYouTubeButton="true">
+            </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

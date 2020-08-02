@@ -1,0 +1,2 @@
+rootProject.name='LearnIt2'
+include ':app'
